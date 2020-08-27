@@ -27,6 +27,10 @@ app.put("/todos", (req, res) => {
 	return res.send(task);
 })
 
+app.get("/thisisnew", (req, res) => {
+	return res.send("wow");
+})
+
 const port = process.env.OPTIC_API_PORT || 3000;
 
 app.listen(port, () => {
