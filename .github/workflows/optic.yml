@@ -1,0 +1,10 @@
+name: Optic Pull Request Bot
+on: [pull_request]
+jobs:
+  optic_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Optic PR Bot
+        uses: trulyronak/gitbot@0.01
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
