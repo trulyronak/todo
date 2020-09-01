@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 	res.redirect("/todos");
 })
 app.get("/todos", (req, res) => {
-	return res.send(todos);
+	return res.send({status: "success", todos});
 })
 
 app.put("/todos", (req, res) => {
